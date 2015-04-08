@@ -1,0 +1,21 @@
+[Config]
+# The address of the remote host to ping/monitor
+ServerAddress=127.0.0.1
+
+# The number of ICMP Echo requests to send at each checkpoint
+PingCount=4
+
+# The number of failures at which to consider the remote host unresponsive
+AlertThreshold=2
+
+# The logfile
+Logfile=bcpingmon.log
+
+# Address of the SMTP server to use to send email alerts
+SMTPServer=127.0.0.1
+
+# Sender's address for the alert email
+SMTPFrom=outage-donotreply@localhost.com
+
+# The recipient address for the alert email
+SMTPTo=admin@localhost.com
